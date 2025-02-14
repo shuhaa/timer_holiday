@@ -1,0 +1,51 @@
+body {
+  background-color: bisque;
+}
+body header h1 {
+  text-align: center;
+}
+body .main__input {
+  margin-top: 5rem;
+  text-align: center;
+}
+body .main__input .inputDates {
+  border: 2px solid #a5a5a5;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 10px;
+}
+body .main__input #changeButton {
+  width: 10rem;
+  height: 1.7rem;
+  border-radius: 7px;
+  border: 2px solid #a5a5a5;
+}
+body .main__input #submitDate {
+  width: 10rem;
+  height: 1.7rem;
+  border-radius: 7px;
+  border: 2px solid #a5a5a5;
+}
+body #textDay {
+  text-align: center;
+  margin-top: 2rem;
+}
+body .main__timer-text {
+  text-align: center;
+}
+body .main__timer-text .inputDates {
+  border: 2px solid #a5a5a5;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 10px;
+}
+body footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
