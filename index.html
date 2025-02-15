@@ -4,8 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Таймер до отпуска</title>
+    <!-- для слайдера -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!--  -->
+    <!-- фейерверк -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.fireworks.js"></script>
+    <!--  -->
+    <!-- мои скрипты -->
     <link rel="stylesheet" href="styles.css" />
-    <script src="my.js" defer></script>
   </head>
   <body>
     <header>
@@ -14,19 +29,77 @@
     <main>
       <section class="main__input">
         <input id="inputDate" class="inputDates" type="datetime-local" />
-        <!-- <input id="inputTime" class="inputDates" type="time" /> -->
         <button id="submitDate">Установить дату</button>
         <button id="changeButton">Изменить дату</button>
       </section>
       <section class="main__timer-text">
-        <h2 id="textDay"></h2>
-        <div id="divImg">
-          <img src="./images/animal.jpg" alt="" />
+        <div class="calc">
+          <h2 id="textDay"></h2>
+          <p id="pDay"></p>
+        </div>
+
+        <div class="calc">
+          <h2 id="textHours"></h2>
+          <p id="pHours"></p>
+        </div>
+        <div class="calc">
+          <h2 id="textMinute"></h2>
+          <p id="pMinute"></p>
+        </div>
+        <div class="calc">
+          <h2 id="textSecond"></h2>
+          <p id="pSecond"></p>
         </div>
       </section>
+      <section class="main__timer-photo">
+        <h3 id="h3"></h3>
+        <h3>Давай пока вспомним как провели прошлый отпуск</h3>
+        <div class="wrapper">
+          <div class="slider">
+            <div class="slider__item">
+              <img src="./images/animal.jpg" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./images/img1.jpg" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./images/img2.jpg" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./images/img3.jpg" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./images/img4.jpg" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./images/img5.jpg" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./images/img6.jpg" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./images/img7.jpg" alt="" />
+            </div>
+            <div class="slider__item">
+              <img src="./images/chill.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>@Project by Daria 2025</p>
+      </footer>
+      <section class="sec">
+        <div class="container"></div>
+      </section>
     </main>
-    <footer>
-      <p>@Project by Daria 2025</p>
-    </footer>
+    <!-- библиотека -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!--  -->
+    <script src="my.js"></script>
   </body>
 </html>
