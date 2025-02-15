@@ -6,6 +6,7 @@ let submitDate = document.querySelector("#submitDate");
 let changeButton = document.querySelector("#changeButton");
 
 let textDay = document.querySelector("#textDay");
+let divImg = document.querySelector("#divImg");
 
 function startCount(inputDateValue) {
   let interval = setInterval(function () {
@@ -14,6 +15,9 @@ function startCount(inputDateValue) {
     if (restMills <= 0) {
       clearInterval(interval);
       textDay.textContent = "Ура, отпуск";
+      let img = document.createElement("img");
+      img.src = "./images/animal.jpg";
+      divImg.appendChild(img);
       return;
     }
 
