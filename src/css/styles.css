@@ -175,13 +175,21 @@ svg * {
   }
 }
 body {
-  background-color: bisque;
+  background-color: #ffe4c4;
 }
 body header h1 {
   text-align: center;
+  font-weight: 700;
+  color: #4d443b;
+  margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  body header h1 {
+    font-size: 30px;
+  }
 }
 body .main__input {
-  margin-top: 5rem;
+  margin-top: 3rem;
   text-align: center;
 }
 body .main__input .inputDates {
@@ -202,31 +210,116 @@ body .main__input #submitDate {
   border-radius: 7px;
   border: 2px solid #a5a5a5;
 }
-body #textDay {
-  text-align: center;
-  margin-top: 2rem;
-}
 body .main__timer-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  body .main__timer-text {
+    gap: 1.5rem;
+  }
+}
+body .main__timer-text .calc {
+  width: 100px;
+  height: 100px;
   text-align: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #4d443b;
 }
-body .main__timer-text .inputDates {
-  border: 2px solid #a5a5a5;
-  width: 20rem;
-  height: 2rem;
-  border-radius: 10px;
+@media (max-width: 500px) {
+  body .main__timer-text .calc {
+    width: 70px;
+    height: 70px;
+  }
 }
-body .main__timer-text #divImg {
-  width: 400px;
+body .main__timer-text .calc h2 {
+  margin-top: 20px;
+  height: 30px;
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 15s ease infinite;
+  line-height: 25px;
+}
+@media (max-width: 500px) {
+  body .main__timer-text .calc h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+body .main__timer-text .calc p {
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 15s ease infinite;
+  line-height: 25px;
+}
+@media (max-width: 500px) {
+  body .main__timer-text .calc p {
+    height: 25px;
+  }
+}
+body .main__timer-photo {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .main__timer-photo h3 {
+  text-align: center;
+  color: #4d443b;
+}
+@media (max-width: 500px) {
+  body .main__timer-photo h3 {
+    font-size: 25px;
+  }
+}
+body .main__timer-photo .wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+body .main__timer-photo .wrapper .slider__item {
+  width: auto;
   height: 400px;
 }
-body .main__timer-text #divImg img {
-  box-sizing: border-box;
+@media (max-width: 500px) {
+  body .main__timer-photo .wrapper .slider__item {
+    width: auto;
+    height: auto;
+  }
 }
-body footer p {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
+body .main__timer-photo .wrapper .slider .slick-slide {
+  opacity: 0.4;
+  border: 3px solid #fff;
+  margin: 0 15px;
+}
+body .main__timer-photo .wrapper .slider .slick-slide.slick-center {
+  opacity: 1;
+}
+body .main__timer-photo .wrapper .slider .slick-arrow {
+  visibility: hidden;
+}
+body .main footer p {
+  font-size: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }/*# sourceMappingURL=styles.css.map */

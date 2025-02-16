@@ -55,15 +55,12 @@ function startCount(inputDateValue) {
     // текст к дням
     if (restDaysLenght[restDaysLenght.length - 1] == "1") {
       pDay.textContent = ` день`;
-    } else if (
-      restDaysLenght[restDaysLenght.length - 1] == "2" ||
-      restDaysLenght[restDaysLenght.length - 1] == "3" ||
-      restDaysLenght[restDaysLenght.length - 1] == "4"
-    ) {
-      pDay.textContent = `дня`;
-    } else {
+    } else if (restDays == 14 || restDays == 12 || restDays == 13) {
       pDay.textContent = `дней`;
+    } else {
+      pDay.textContent = `дня`;
     }
+    console.log(restDays);
     // текст к часам
     if (restHoursLenght[restHoursLenght.length - 1] == "1") {
       pHours.textContent = `час`;

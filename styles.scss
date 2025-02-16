@@ -87,6 +87,10 @@ body {
           -webkit-animation: rainbow 20s ease infinite;
           animation: rainbow 15s ease infinite;
           line-height: 25px;
+          @media (max-width: 500px) {
+            margin-top: 10px;
+            margin-bottom: 0;
+          }
         }
         p {
           background: linear-gradient(
@@ -105,6 +109,9 @@ body {
           -webkit-animation: rainbow 20s ease infinite;
           animation: rainbow 15s ease infinite;
           line-height: 25px;
+          @media (max-width: 500px) {
+            height: 25px;
+          }
         }
       }
     }
@@ -148,12 +155,12 @@ body {
         }
       }
     }
-  }
-  footer {
-    p {
-      font-size: 1rem;
-      text-align: center;
-      margin-bottom: 1rem;
+    footer {
+      p {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
